@@ -10,18 +10,21 @@ const sum = function(array) {
     return array.reduce((total, current) => total + current, 0);
 };
 
-const multiply = function() {
-
+const multiply = function(array) {
+    return array.reduce((total, current) => total * current);
 };
 
-const power = function() {
-	
+const power = function power(base, exponent) {
+    return Math.pow(base, exponent);
 };
 
-const factorial = function() {
-	
+const factorial = function(n) {
+  let product = 1;
+  for (let i = n; i > 0; i--) {
+    product *= i;
+  }
+  return product;
 };
-
 // Do not edit below this line
 module.exports = {
   add,
